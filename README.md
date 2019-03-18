@@ -11,5 +11,8 @@ http://localhost:8080/vnc_auto.html
 For development, including editing and running code, from a separate terminal window run:
 docker exec -it turtle bash
 
+Every time you start a new shell process, you will need the command:
+source /opt/ros/melodic/setup.bash
+
 Then proceed with tutorials, for example:
 http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line
