@@ -3,7 +3,7 @@ docker rm -f novnc turtle
 docker run --network x11 --name novnc --rm -p 8080:8080 theasp/novnc 2>&1 > x11.log &
 echo Waiting for X11 desktop
 sleep 2
-echo Starting turtle sim
-echo To get a new shell (bash) session on the ROS container, type:
-echo docker exec -it turtle bash
+echo 'Starting turtle sim'
+echo 'To get a new shell (bash) session on the ROS container, type:'
+echo 'docker exec -it turtle bash'
 docker run --network x11 --name turtle -it --rm -e DISPLAY=novnc:0 turtle /root/turtle-start
