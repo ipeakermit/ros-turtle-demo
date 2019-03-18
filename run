@@ -1,0 +1,5 @@
+docker network create x11
+docker rm -f novnc turtle
+docker run --network x11 --name novnc --rm -p 8080:8080 theasp/novnc 2>&1 > x11.log &
+sleep 2
+docker run --network x11 --name turtle -it --rm -e DISPLAY=novnc:0 turtle /root/turtle-start
