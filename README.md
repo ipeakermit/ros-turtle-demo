@@ -4,6 +4,10 @@ Requires recent Ubuntu, git and docker-ce installed.
 
 Use git to clone this repository.
 
+Run ./build to build the container image.
+
+Run ./run to start the (two) containers. One container is a virtual Xorg display. The other is used to run the simulator.
+
 Once started, to see the simulation window, run a browser on the same machine, with the URL:
 http://localhost:8080/vnc_auto.html
 
