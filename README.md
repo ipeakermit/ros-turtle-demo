@@ -4,15 +4,16 @@ Requires recent Ubuntu, git and docker-ce installed.
 
 Use git to clone this repository.
 
-Run ./build to build the container image.
+Run "./build" to build the container image.
 
-Run ./run to start the (two) containers. One container is a virtual Xorg display. The other is used to run the simulator.
+Run "./run" to start the (two) containers. One container is a virtual Xorg display. The other is used to run the ROS simulator.
 
-Once started, to see the simulation window, run a browser on the same machine, with the URL:
+For access to the ROS simulator, in a separate terminal run: "docker exec -it turtle bash"
+
+To see the Gazebo simulation output window, on your host machine browse to:
 http://localhost:8080/vnc_auto.html
 
-For development, including editing and running code, from a separate terminal window run:
-docker exec -it turtle bash
+NOTE: you cannot use the terminal window in the browser to interact with ROS. The browser is for viewing the Gazebo simulator only.
 
 Every time you start a new shell process, you will need the command:
 source /opt/ros/melodic/setup.bash
