@@ -19,8 +19,7 @@ Then type ./move.py and to the prompts enter some values like "1" "2" and "3" (w
 
 The turtle should move in the Gazebo output.
 
-Then proceed with tutorials, for example:
-http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line
-
-See http://wiki.ros.org/turtlesim for more information.
-(Everything up to and including "rosrun turtlesim ..." is done for you by the container...)
+Then proceed with other tutorials
+(http://wiki.ros.org/turtlesim/Tutorials/)
+or
+see http://wiki.ros.org/turtlesim for more information.
