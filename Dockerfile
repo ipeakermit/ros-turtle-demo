@@ -8,4 +8,5 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y \
 
 
 COPY turtle-start /root/turtle-start
-RUN chmod +x /root/turtle-start
+COPY move.py /root/move.py
+RUN chmod +x /root/turtle-start /root/move.py
